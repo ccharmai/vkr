@@ -2,7 +2,6 @@
   <div class="layout">
     <TheMenu />
     <div class="content">
-      <!-- <Demo /> -->
       <router-view />
     </div>
   </div>
