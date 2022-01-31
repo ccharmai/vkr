@@ -2,7 +2,8 @@
   <div class="layout">
     <TheMenu />
     <div class="content">
-      <Demo />
+      <!-- <Demo /> -->
+      <router-view />
     </div>
   </div>
 </template>
