@@ -18,3 +18,9 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+input[type="text"], input[type="password"] {
+  font-size: 1em;
+  font-family: 'Nunito';
+  outline: none;
+}

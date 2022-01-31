@@ -1,7 +1,9 @@
 <template>
   <div class="layout">
     <TheMenu />
-    <div class="content"></div>
+    <div class="content">
+      <Demo />
+    </div>
   </div>
 </template>
 
@@ -9,9 +11,10 @@
 import { defineComponent } from 'vue'
 
 import TheMenu from '@/components/TheMenu.vue'
+import Demo from '@/components/Demo.vue'
 
 export default defineComponent({
-  components: { TheMenu },
+  components: { TheMenu, Demo },
   setup() {}
 })
 </script>
