@@ -40,12 +40,12 @@ export default defineComponent({
   display: flex;
   align-items: center;
   gap: calc($hp / 2);
+  cursor: pointer;
   .box {
     width: 1em;
     height: 1em;
     border: 2px solid $gray;
     border-radius: .2em;
-    cursor: pointer;
     transition: .2s ease border;
     display: flex;
     align-items: center;

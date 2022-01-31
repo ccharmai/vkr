@@ -47,6 +47,7 @@ export default defineComponent({
     padding: $hp;
     border-radius: $br;
     background-color: $lightgray;
+    transition: .3s ease opacity;
     &.disabled {
       opacity: .5;
       cursor: not-allowed;

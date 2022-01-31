@@ -1,8 +1,8 @@
 <template>
   <div class="demo">
     <VInput v-model="line" placeholder="Имя" />
-    <VInput v-model="line" placeholder="Имя" disabled />
-    <VCheck v-model="isChecked" text="Выбрано" />
+    <VInput v-model="line" placeholder="Имя" :disabled="isChecked" />
+    <VCheck v-model="isChecked" text="Заблокировать ввод" />
   </div>
 </template>
 
