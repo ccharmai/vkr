@@ -2,6 +2,7 @@
   <div class="demo">
     <VInput v-model="line" placeholder="Имя" />
     <VInput v-model="line" placeholder="Имя" disabled />
+    <VCheck v-model="isChecked" text="Выбрано" />
   </div>
 </template>
 
@@ -9,13 +10,16 @@
 import { defineComponent, ref } from 'vue'
 
 import VInput from '@/components/VInput.vue'
+import VCheck from '@/components/VCheck.vue'
 
 export default defineComponent({
-  components: { VInput },
+  components: { VInput, VCheck },
   setup() {
     const line = ref('')
 
-    return { line }
+    const isChecked = ref(false)
+
+    return { line, isChecked }
   }
 })
 </script>
@@ -26,5 +30,8 @@ export default defineComponent({
   background-color: $white;
   padding: $p;
   border-radius: $br;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 </style>
