@@ -1,8 +1,18 @@
+@import '@/assets/style/vars';
+@import '@/assets/font/nunito';
+
 html, body {
   margin: 0;
   padding: 0;
+  background-color: $lightgray;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito';
+}
+
+#app {
+  height: 100%;
 }
 
 * {
